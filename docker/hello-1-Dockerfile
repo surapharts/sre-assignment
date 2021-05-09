@@ -30,4 +30,4 @@ RUN apt-get update && \
 
 USER appuser
 
-ENTRYPOINT [ "tini", "-sg", "--", "node", "hello-1.js" ]
+ENTRYPOINT [ "tini", "--", "node", "hello-1.js" ]
